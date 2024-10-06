@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.productRouter = void 0;
+const express_1 = require("express");
+const productController_1 = require("../controllers/productController");
+const authMiddleware_1 = require("../middleware/authMiddleware");
+const router = (0, express_1.Router)();
+exports.productRouter = router;
+router.get("/", productController_1.getAllProducts);
+router.post("/checkout", authMiddleware_1.verifyToken, productController_1.checkout);
+router.get("/purchased-items/:customerID", authMiddleware_1.verifyToken, productController_1.getPurchasedItems);
