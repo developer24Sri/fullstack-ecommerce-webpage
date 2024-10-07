@@ -1,0 +1,59 @@
+.purchased-items-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.purchased-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+.purchased-items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.purchased-items .item:hover {
+    transform: scale(1.05);
+}
+
+.purchased-items .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.purchased-items button {
+    background-color: yellow;
+    /* Button color */
+    color: black;
+    /* Text color */
+    border: none;
+    /* No border */
+    padding: 10px 20px;
+    /* Padding for button */
+    border-radius: 15px;
+    /* Rounded corners for button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover */
+}
+
+.purchased-items button:hover {
+    background-color: lightgreen;
+    /* Darker shade on hover */
+}

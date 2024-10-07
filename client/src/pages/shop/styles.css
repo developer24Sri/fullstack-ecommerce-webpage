@@ -1,0 +1,110 @@
+/* Shop Page Styles */
+.shop {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f4f4f9;
+    /* Soft background color */
+}
+
+/* Products Container */
+.products {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Responsive grid */
+    gap: 30px;
+    /* Increased spacing between product cards */
+}
+
+/* Product Card Styles */
+.product {
+    border-radius: 15px;
+    background-color: #ffffff;
+    /* Light background for product card */
+    color: #1a1a1a;
+    /* Dark text for readability */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for product card */
+.product:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    /* Stronger shadow on hover */
+}
+
+/* Product Image Styles */
+.product img {
+    width: 100%;
+    /* Full width for images */
+    height: 200px;
+    /* Fixed height for uniformity */
+    object-fit: contain;
+    /* Maintain aspect ratio and fit inside the container */
+    border-radius: 10px;
+    /* Rounded corners for images */
+}
+
+/* Product Description Styles */
+.product .description {
+    text-align: center;
+}
+
+.product .description h3 {
+    display: flex;
+    /* Use flex for alignment */
+    align-items: center;
+    /* Center items vertically */
+}
+
+/* Add to Cart Button Styles */
+.addToCartBttn {
+    background-color: #ffcc00;
+    /* Button background */
+    color: #1a1a1a;
+    /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    /* Flex for icon alignment */
+    align-items: center;
+    /* Center the items vertically */
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.addToCartBttn:hover {
+    background-color: #00ff7f;
+    /* Button hover color */
+    transform: translateY(-2px);
+    /* Slight lift effect on hover */
+}
+
+/* Stock Quantity Styles */
+.stockQuantity {
+    margin-top: 10px;
+    /* Space above stock quantity message */
+}
+
+.stockQuantity h1 {
+    color: #ff4757;
+    /* Red color for out-of-stock message */
+    font-size: 18px;
+    display: flex;
+    /* Flex for alignment */
+    align-items: center;
+    /* Center items vertically */
+}
